@@ -1,29 +1,249 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Flash Cards</title>
   </head>
-  <body>
+  <body class="bg-image">
 
-<!--
+    <div class="container">
 
-  1.) Update title in webpack.config.js
+      <div id="opening-page">
+        <h2>Welcome to Flash Cards</h2>
+        <p>This is a multiple choice test. Please choose and submit an answer within a 30 second period. If you fail to submit an answer within the allotted time, the question will be marked incorrect and you will be given the next question. Click the start button to begin.</p>
+        <button id="opening" type="submit" class="btn btn-primary">Start</a>
+      </div>
 
-  2.) Update name in package in package.json
+      <div id="correct-answer">
+        <h2>Correct!!!</h2>
+      </div>
 
-  3.) OPTIONAL: Add author, etc...
+      <div id="wrong-answer">
+        <h2>Wrong!!!</h2>
+      </div>
 
-  REMEMBER:
+      <div id="asychronous-div" class="card">
+        <div class="card-header">
+          JavaScript
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What does asychronous mean?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="asynchronous" value="1" checked>
+              Code that executes right now.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="asynchronous" value="2">
+              Code that executes later.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="asynchronous" value="3">
+              A keyword used on callback functions.
+            </label>
+          </div>
+          <button id="asynch-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
 
-    initialize new git repo
-    npm install
-    npm run test
-    npm run build
-    npm start live
-
--->
 
 
+
+      <div id="display-div" class="card">
+        <div class="card-header">
+          CSS
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is the correct property to hide a class using CSS?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="hidingClass" value="1" checked>
+              display: none;
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hidingClass" value="2">
+              display: hide;
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hidingClass" value="3">
+              className: hide;
+            </label>
+          </div>
+          <button id="display-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+
+      <div id="lexical-div" class="card">
+        <div class="card-header">
+          Javascript
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is the definition of lexical scope?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="lexical" value="1" checked>
+              All variables have global scope.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="lexical" value="2">
+              A variable defined inside a function will be accessible outside that function.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="lexical" value="3">
+              A variable defined outside a function can be accessible inside another function defined after the variable declaration.
+            </label>
+          </div>
+          <button id="lexical-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+
+
+      <div id="ternary-div" class="card">
+        <div class="card-header">
+          Javascript
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is the correct syntax for a ternary expression?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="ternary" value="1" checked>
+              energyLevel > 10 ? true: false;
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ternary" value="2">
+              if (energyLevel > 10) ? true; false;
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ternary" value="3">
+              if energyLevel > 10 === true: false;
+            </label>
+          </div>
+          <button id="ternary-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+
+
+      <div id="image-div" class="card">
+        <div class="card-header">
+          CSS
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is one correct way to add a background image using CSS?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="image" value="1" checked>
+              image {
+                background-image: url('img/dogs');
+              }
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="image" value="2">
+              image {
+                background-image: url(img/dogs.jpeg);
+              }
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="image" value="3">
+              image {
+                background-image: url('img/dogs.jpeg');
+              }
+            </label>
+          </div>
+          <button id="image-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+
+
+      <div id="webpack-div" class="card">
+        <div class="card-header">
+          Webpack / npm
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is the correct command to enter in the command line to start a live server?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="webpack" value="1" checked>
+              live server start
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="webpack" value="2">
+              npm run live server
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="webpack" value="3">
+              npm run start
+            </label>
+          </div>
+          <button id="webpack-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+
+
+      <div id="font-div" class="card">
+        <div class="card-header">
+          CSS
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is the correct way to make text bold using CSS?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="font" value="1" checked>
+              .example-class-name {
+                font-weight: bolder;
+              }
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="font" value="2">
+              .example-class-name {
+                font: bold;
+              }
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="font" value="3">
+              .example-class-name {
+                text-style: bold;
+              }
+            </label>
+          </div>
+          <button id="font-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    </div>  <!-- End of container -->
 
   </body>
 </html>
