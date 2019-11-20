@@ -1,6 +1,4 @@
-// Business Logic (export items in this file. Import jQuery here if needed)
-
-
+import $ from 'jquery';
 
 export class Answer {
   constructor(answer) {
@@ -17,12 +15,4 @@ export class Answer {
       return false;
     }
   }
-
 }
-
-
-
-//
-// export function calculateScore(){
-//     return `${scoreCounter}/10`;
-//   }

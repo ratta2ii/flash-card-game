@@ -1,17 +1,42 @@
-.bg-image {
-  background-image: url('img/books.jpg');
+body {
+  background-color: #0A2672;
 }
 
-
-
-#correct-answer {
-  display: none;
+#opening-page h1 {
+  font-size: 100px;
+  text-align: center;
+  color: ghostwhite;
+  margin-top: 250px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 4px;
+  word-spacing: 15px;
 }
 
-#wrong-answer {
-  display: none;
+#opening-page p {
+  color: ghostwhite;
+  font-size: 20px;
+  text-align: center;
 }
 
+.answer-box {
+  width: 55%;
+  margin: 300px auto;
+  border: 10px solid #F18424;
+}
+
+.card-header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+
+label {
+  margin-left: 20px;
+}
+
+input {
+  margin-left: 15px;
+}
 
 #asychronous-div {
   display: none;
@@ -39,4 +64,57 @@
 
 #font-div {
   display: none;
+}
+
+#ajax-div {
+  display: none;
+}
+
+#both-div {
+  display: none;
+}
+
+#blocking-div {
+  display: none;
+}
+
+#results-div {
+  display: none;
+}
+
+#results-div h1 {
+  font-size: 100px;
+  text-align: center;
+  color: ghostwhite;
+  margin-top: 275px;
+  margin-bottom: 100px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 4px;
+  word-spacing: 15px;
+}
+
+button {
+  margin: 30px 0 0 0;
+}
+
+button#start {
+  width: 250px;
+  font-size: 50px;
+  color: ghostwhite;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 100px 0 0 35%;
+}
+
+#display-gif {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1200px){
+  .answer-box {
+    max-width: 80%;
+    min-width: 60%;
+  }
 }

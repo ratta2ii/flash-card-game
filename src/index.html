@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Tomorrow:500&display=swap" rel="stylesheet">
     <title>Flash Cards</title>
   </head>
-  <body class="bg-image">
+  <body>
 
     <div class="container">
-
       <div id="opening-page">
-        <h2>Welcome to Flash Cards</h2>
-        <p>This is a multiple choice test. Please choose and submit an answer within a 30 second period. If you fail to submit an answer within the allotted time, the question will be marked incorrect and you will be given the next question. Click the start button to begin.</p>
-        <button id="opening" type="submit" class="btn btn-primary">Start</a>
+        <h1>Welcome to Flash Cards</h1>
+        <button id="start" type="submit" class="btn btn-primary">START</a>
       </div>
 
-      <div id="correct-answer">
-        <h2>Correct!!!</h2>
-      </div>
-
-      <div id="wrong-answer">
-        <h2>Wrong!!!</h2>
-      </div>
-
-      <div id="asychronous-div" class="card">
+      <div id="asychronous-div" class="card answer-box">
         <div class="card-header">
           JavaScript
         </div>
@@ -49,10 +40,7 @@
         </div>
       </div>
 
-
-
-
-      <div id="display-div" class="card">
+      <div id="display-div" class="card answer-box">
         <div class="card-header">
           CSS
         </div>
@@ -80,7 +68,7 @@
         </div>
       </div>
 
-      <div id="lexical-div" class="card">
+      <div id="lexical-div" class="card answer-box">
         <div class="card-header">
           Javascript
         </div>
@@ -108,8 +96,7 @@
         </div>
       </div>
 
-
-      <div id="ternary-div" class="card">
+      <div id="ternary-div" class="card answer-box">
         <div class="card-header">
           Javascript
         </div>
@@ -118,27 +105,26 @@
           <div class="radio card-text">
             <label>
               <input type="radio" name="ternary" value="1" checked>
-              energyLevel > 10 ? true: false;
+              if energyLevel > 10 === true: false;
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="ternary" value="2">
-              if (energyLevel > 10) ? true; false;
+              energyLevel > 10 ? true: false;
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="ternary" value="3">
-              if energyLevel > 10 === true: false;
+              if (energyLevel > 10) ? true; false;
             </label>
           </div>
           <button id="ternary-button" type="submit" class="btn btn-primary">Submit</a>
         </div>
       </div>
 
-
-      <div id="image-div" class="card">
+      <div id="image-div" class="card answer-box">
         <div class="card-header">
           CSS
         </div>
@@ -172,8 +158,7 @@
         </div>
       </div>
 
-
-      <div id="webpack-div" class="card">
+      <div id="webpack-div" class="card answer-box">
         <div class="card-header">
           Webpack / npm
         </div>
@@ -201,13 +186,12 @@
         </div>
       </div>
 
-
-      <div id="font-div" class="card">
+      <div id="font-div" class="card answer-box">
         <div class="card-header">
           CSS
         </div>
         <div class="card-body">
-          <h5 class="card-title">What is the correct way to make text bold using CSS?</h5>
+          <h5 class="card-title">Which one of these is a correct way to make text bold using CSS?</h5>
           <div class="radio card-text">
             <label>
               <input type="radio" name="font" value="1" checked>
@@ -236,12 +220,96 @@
         </div>
       </div>
 
+      <div id="ajax-div" class="card answer-box">
+        <div class="card-header">
+          JavaScript
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What does AJAX stand for?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="ajax" value="1" checked>
+              Asynchronous JavaScript And XML
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ajax" value="2">
+              Adjustable JavaScript Application Experience
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ajax" value="3">
+              Asynchronous Json Application Experience
+            </label>
+          </div>
+          <button id="ajax-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
 
+      <div id="both-div" class="card answer-box">
+        <div class="card-header">
+          JavaScript
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is the proper name for an AJAX request?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="both" value="1" checked>
+              XHR
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="both" value="2">
+              XMLHttpRequest Object
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="both" value="3">
+              Both
+            </label>
+          </div>
+          <button id="both-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
 
+      <div id="blocking-div" class="card answer-box">
+        <div class="card-header">
+          JavaScript
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What does non-blocking mean?</h5>
+          <div class="radio card-text">
+            <label>
+              <input type="radio" name="blocking" value="1" checked>
+              Javascript does not block incoming API requests.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="blocking" value="2">
+              The JS engine won’t necessarily wait until that thing is finished (if it’s async code) before moving on to the next thing.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="blocking" value="3">
+              JavaScript blocks all incoming requests until the code is finished executing.
+            </label>
+          </div>
+          <button id="blocking-button" type="submit" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
 
+      <div id="results-div">
+        <h1>Your score is: <span id="results-text"></span></h1>
+      </div>
 
-
-
+      <div id="display-gif"></div>
+      </div>
 
     </div>  <!-- End of container -->
 
